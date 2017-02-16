@@ -6,8 +6,8 @@
  //入口函数
 function acquire(openid,opentype,message,expandparams){
 	callback = "flightHandler";
-	url = 'http://www.cmpassport.com/openapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
-	//url = 'http://192.168.42.25:30030/umcopenapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
+	//url = 'http://www.cmpassport.com/openapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
+	url = 'http://121.15.167.251:30030/umcopenapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
 	// 创建script标签，设置其属性
 	var script = document.createElement('script');
 	script.setAttribute('src', url);
@@ -17,8 +17,8 @@ function acquire(openid,opentype,message,expandparams){
 
 function acquire_dev(openid,opentype,message,expandparams){
 	callback = "flightHandler";
-	url = 'http://www.cmpassport.com/openapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
-	//url = 'http://121.15.167.251:30030/umcopenapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
+	//url = 'http://www.cmpassport.com/openapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
+	url = 'http://121.15.167.251:30030/umcopenapi/openmd?openid='+openid+'&unikey='+unikey+'&opentype='+opentype+'&message='+encodeURIComponent(message)+'&expandparams='+encodeURIComponent(expandparams)+'&func='+func+'&callback='+callback;
 	// 创建script标签，设置其属性
 	var script = document.createElement('script');
 	script.setAttribute('src', url);
